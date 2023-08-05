@@ -14,11 +14,10 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">From zero experience to your Dream job</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Helping students and recent graduates start their career.Enabling skills development in a live environment, making students industry ready.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Kick Start Your Career" />
           </BtnWrapper>
         </div>
       </LeftSide>
@@ -51,17 +50,17 @@ export default function Header() {
 
 
 const Wrapper = styled.section`
-  padding-top: 80px;
+  padding-top: 50px;
   padding-right: 25em;
   width: 100%;
-  min-height: 840px;
+  min-height: 760px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
 const LeftSide = styled.div`
   width: 100%;
-  height: 100%;
+  height: 90%;
   @media (max-width: 960px) {
     width: 100%;
     order: 2;
