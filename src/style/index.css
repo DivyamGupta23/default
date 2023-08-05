@@ -39,10 +39,10 @@
   }
   a {
     text-decoration: none!important;
-    color: #0B093B;
+    color: #1f1f1f;
   }
   a:hover {
-    color: #7620FF;
+    color: #111111;
   }
   input:-webkit-autofill {
     -webkit-box-shadow:0 0 0 50px #fff inset; /* Change the color to your own background color */
@@ -51,7 +51,7 @@
   }
   body {
     background: #fff;
-    color: #0B093B;
+    color: #1e1e1e;
     font-family: 'Khula', sans-serif;
     overflow-x: hidden;
     font-size: 16px;
@@ -104,8 +104,8 @@
     width: 100%;
   }
   .active {
-    border-bottom: 2px solid #7620FF;
-    color: #7620FF;
+    border-bottom: 2px solid #058cfa;
+    color: #058cfa;
   }
   .tag {
     padding: 5px 10px;
@@ -267,5 +267,5 @@
     background-color: #707070;
   }
   .whiteBg {
-    background-color: #fff;
+    background-color: #e3ecf0;
   }
