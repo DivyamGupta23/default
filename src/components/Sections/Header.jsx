@@ -2,66 +2,58 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
+import ClientSlider from "../Elements/ClientSlider";
 // Assets
 import HeaderImage from "../../assets/img/header-img.png";
-import QuotesIcon from "../../assets/svg/Quotes";
-import Dots from "../../assets/svg/Dots";
 
 export default function Header() {
   return (
+    <>
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
+          <h1 className="extraBold font60">From zero experience to your Dream job</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Helping students and recent graduates start their career.Enabling skills development in a live environment, making students industry ready.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Kick Start Your Career" />
           </BtnWrapper>
         </div>
-      </LeftSide>
+      </LeftSide>       
       <RightSide>
-      {/* <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} /> */}
+  
     
-        {/* <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
+        <ImageWrapper>
+          <Img className="radius8" src={HeaderImage} alt="office"  />
     
-          <QuoteWrapper className="flexCenter darkBg radius8">
-            <QuotesWrapper>
-              <QuotesIcon />
-            </QuotesWrapper>
-            <div>
-              <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
-              </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
-            </div>
-          </QuoteWrapper>
-          <DotsWrapper>
-            <Dots />
-          </DotsWrapper>
-        </ImageWrapper>*/}
-        {/* <GreyDiv className="lightBg"></GreyDiv>  */}
+    
+        </ImageWrapper>
+
       </RightSide>
+
     </Wrapper>
+  <div>    
+  <ClientSlider />
+    </div>
+
+    </>
+
   );
 }
 
-
 const Wrapper = styled.section`
-  padding-top: 80px;
+  padding-top: 50px;
   padding-right: 25em;
   width: 100%;
-  min-height: 840px;
+  min-height: 760px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
 const LeftSide = styled.div`
   width: 100%;
-  height: 100%;
+  height: 90%;
   @media (max-width: 960px) {
     width: 100%;
     order: 2;
@@ -73,8 +65,9 @@ const LeftSide = styled.div`
   }
 `;
 const RightSide = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
+  margin-left: 20rem;
   @media (max-width: 960px) {
     width: 100%;
     order: 1;
